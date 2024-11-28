@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  border-radius: 50%;
+  border: 4px solid #ffc0cb; /* Pastel pink border */
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.6); /* Glow effect */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s ease-in-out;
+  }
+}
+
+.App-header {
+  background-color: #ffe4e1; /* Light pastel pink */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #ff69b4; /* Hot pink */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+  text-shadow: 2px 2px #fff; /* Subtle highlight */
+}
+
+.App-link {
+  color: #ffb6c1; /* Light pink */
+  text-decoration: underline;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.App-link:hover {
+  color: #ff69b4; /* Hot pink on hover */
+  transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
