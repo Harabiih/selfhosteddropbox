@@ -36,7 +36,7 @@ export default function Dashboard() {
   if (folder === undefined || folder === null) {
     return (
       <Flex align="center" justify="center" height="100vh">
-        <Spinner size="xl" />
+        <Spinner size="xxl" />
       </Flex>
     );
   }
@@ -44,16 +44,16 @@ export default function Dashboard() {
   return (
     <>
       <Navbar />
-      <Box p={4} bg="blue.50" minHeight="100vh">
+      <Box p={4} bg="blue.100" minHeight="100vh">
 
         {/* Back Button and Search Bar */}
-        <Flex align="center" justify="space-between" mb={4}>
+        <Flex align="left" justify="space-between" mb={4}>
           <Tooltip label="Go Back" fontSize="md">
             <IconButton
               icon={<ArrowBackIcon />}
-              colorScheme="teal"
+              colorScheme="Blue"
               variant="outline"
-              size={"md"}
+              size={"lg"}
               isRound
               onClick={handleBack}
               aria-label="Go back"
@@ -61,19 +61,19 @@ export default function Dashboard() {
           </Tooltip>
           <Box mx={500} />
           <Input
-            placeholder="Search files and folders"
+            placeholder="Search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             maxWidth="300px"
           />
-          <IconButton
+          {/* <IconButton
             aria-label="Search"
             icon={<SearchIcon />}
             onClick={() => console.log("Search Clicked")}
-            colorScheme="teal"
+            colorScheme="blue"
             variant="solid"
             ml={2}
-          />
+          /> */}
         </Flex>
 
         {/* Folder Breadcrumbs */}

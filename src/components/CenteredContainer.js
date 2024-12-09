@@ -3,7 +3,7 @@ import { Box, Center } from "@chakra-ui/react";
 
 export default function CenteredContainer({ children }) {
   return (
-    <Center  bg="gray.50"> {/* Centering the content and setting a background color */}
+    <Center  bg="gray.100"> {/* Centering the content and setting a background color */}
       <Box 
         width="100%" 
         maxWidth="400px" 

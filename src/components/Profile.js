@@ -37,17 +37,17 @@ export default function Profile() {
             </Alert>
           )}
           <VStack spacing={4} align="flex-start">
-            <Text fontWeight="bold" color="gray.800">
+            <Text fontWeight="bold" color="black.800">
               Email:
             </Text>
-            <Text color="gray.600">{currentUser.email}</Text>
+            <Text color="black.600">{currentUser.email}</Text>
             <Link to="/update-profile" style={{ width: '100%' }}>
               <Button
                 colorScheme="blue"
                 width="full"
                 size="lg"
                 borderRadius="md"
-                _hover={{ bg: "blue.600", transform: "scale(1.05)" }} 
+                _hover={{ bg: "blue.500", transform: "scale(1.05)" }} 
               >
                 Update Profile
               </Button>
@@ -59,7 +59,7 @@ export default function Profile() {
                 width="full"
                 size="lg"
                 borderRadius="md"
-                _hover={{ bg: "teal.600", transform: "scale(1.05)" }} 
+                _hover={{ bg: "blue.600", transform: "scale(1.05)" }} 
                 mt={4} 
               >
                 Go Back to Home
